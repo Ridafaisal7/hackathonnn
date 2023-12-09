@@ -39,8 +39,26 @@ export default function Login() {
         <p>or</p>
         <button onClick={signin} style={{ width: '90%', height: '35px', fontSize: 'large', borderRadius: '5px', color: 'white', backgroundColor: 'deeppink', marginBottom: '10px', border: '1px solid deeppink' }}  >Sign In</button>
         <center>
+  <p>
+    Don&apos;t have an account?
+    <span
+      style={{ cursor: 'pointer', color: 'blue' }}
+      onClick={() => router.push('/register')}
+    >
+      {' '}
+      Register
+    </span>
+  </p>
+</center>
+
+<p>
+  By signing up, you agree to our{' '}
+  <span style={{ color: 'deeppink' }}>Terms and Conditions</span> and{' '}
+  <span style={{ color: 'deeppink' }}>Privacy Policy</span>
+</p>
+        {/* <center>
            <center> <p>Don't have an account?<span style={{ cursor: 'pointer', color: 'blue' }} onClick={() => router.push('/register')}> Register</span></p> </center>
         </center>
-        <p>By signing up, you agree to our <span style={{ color: 'deeppink' }}>Terms and Conditions</span> and <span style={{ color: 'deeppink' }}>Privacy Policy</span></p>
+        <p>By signing up, you agree to our <span style={{ color: 'deeppink' }}>Terms and Conditions</span> and <span style={{ color: 'deeppink' }}>Privacy Policy</span></p> */}
     </div>
 }
