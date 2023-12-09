@@ -34,7 +34,7 @@ export default function Dashboard() {
         getData()
         request()
         MyContacts()
-    }, [])
+    }, [auth])
 
     // useEffect(() => {
     //     onAuthStateChanged(auth, (user) => {
@@ -182,7 +182,6 @@ export default function Dashboard() {
                     </div>
                     <div className='menuu-item'>
                         <FaSmile /> <Link href="/marketplace">Feelings</Link>
-
                     </div>
                     <div className='menuuu-item'>
                         <button className="button-post" onClick={() => router.push('/postad')}>Post</button>
@@ -275,7 +274,7 @@ export default function Dashboard() {
                 <div className='request'>
                     <h1 style={{ fontSize: 'large', fontWeight: 'bolder', textAlign: 'left', padding: 10 }}>Upcoming events</h1>
                     <div>
-                        <span><img width={30} src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJukIYseLOtlMDhYKfQfx0uDqurOqoXNmQOw&usqp=CAU' />
+                        <span><image width={30} src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJukIYseLOtlMDhYKfQfx0uDqurOqoXNmQOw&usqp=CAU' />
                             <h2 style={{ position: 'relative', bottom: 34, right: 59 }}>Design Talks</h2>
                             <h4 style={{ position: 'relative', bottom: 38, right: 59, fontSize: 12 }}>12 Oct, 13:00 IST</h4>
                             <p style={{ fontSize: 12, position: 'relative', bottom: 30, borderBottom: '1px solid grey' }}>A general talks about design is a set of <br />  Designer of Logitech Michael Skunpit</p>
@@ -287,7 +286,7 @@ export default function Dashboard() {
                 <div className='request'>
                     <h1 style={{ fontSize: 'large', fontWeight: 'bolder', textAlign: 'left', padding: 10 }}>Upcoming events</h1>
                     <div>
-                        <span><img width={30} src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJukIYseLOtlMDhYKfQfx0uDqurOqoXNmQOw&usqp=CAU' />
+                        <span><image width={30} src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJukIYseLOtlMDhYKfQfx0uDqurOqoXNmQOw&usqp=CAU' />
                             <h2 style={{ position: 'relative', bottom: 34, right: 59 }}>Design Talks</h2>
                             <h4 style={{ position: 'relative', bottom: 38, right: 59, fontSize: 12 }}>30 Dec, 16:00 IST</h4>
                             <p style={{ fontSize: 12, position: 'relative', bottom: 30, borderBottom: '1px solid grey' }}>A general talks about design is a set of <br />  Designer of Logitech Michael Skunpit</p>

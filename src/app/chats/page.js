@@ -40,9 +40,6 @@ const Chats = () => {
     getChat();
   };
 
-
- 
-
   return (
     <div>
       {room ? (

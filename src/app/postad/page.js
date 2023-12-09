@@ -10,7 +10,6 @@ export default function PostAd() {
     const [loading, setLoading] = useState(false)
     const [type, setType] = useState()
 
-    
     const addPost = async () => {
         setLoading(true)
         await post(description, file[0], type)
