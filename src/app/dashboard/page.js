@@ -36,15 +36,15 @@ export default function Dashboard() {
         MyContacts()
     }, [])
 
-    useEffect(() => {
-        onAuthStateChanged(auth, (user) => {
-            if (user) {
-                const uid = user.uid;
-                setUserDetail(user)
-            } else {
-            }
-        });
-    }, [logOut])
+    // useEffect(() => {
+    //     onAuthStateChanged(auth, (user) => {
+    //         if (user) {
+    //             const uid = user.uid;
+    //             setUserDetail(user)
+    //         } else {
+    //         }
+    //     });
+    // }, [logOut])
 
     console.log('users', userDetail)
 

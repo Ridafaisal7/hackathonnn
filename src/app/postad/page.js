@@ -23,7 +23,7 @@ export default function PostAd() {
         <input style={{ border: '1px solid black', width: '330px', height: '35px' }} type="text" onChange={(e) => setDescription(e.target.value)} placeholder=" DESCRIPTION" /> <br /> <br />
         <input style={{ border: '1px solid black', width: '330px', height: '35px' }} type="text" onChange={(e) => setType(e.target.value)} placeholder=" Write Image / Audio / Video" /> <br /> <br />
         <input className="postfile" onChange={(e) => setFile(e.target.files)} type="file" /><br /><br />
-        {loading ? <img src='https://i.gifer.com/ZKZg.gif' width='20' />
+        {loading ? <image src='https://i.gifer.com/ZKZg.gif' width='20' />
             :
             <center> <button style={{ fontSize: 20, marginLeft: '120px' }} className="button-post" onClick={addPost}>Submit</button> </center>
         }
