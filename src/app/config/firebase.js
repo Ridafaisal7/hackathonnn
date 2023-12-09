@@ -23,31 +23,6 @@ const auth = getAuth(app);
 const db = getFirestore(app)
 const storage = getStorage(app)
 
-// var emailAuthProvider = new firebase.auth.EmailAuthProvider();
-// var facebookAuthProvider = new firebase.auth.FacebookAuthProvider();
-
-// // Example of email/password sign-up
-// firebase.auth().createUserWithEmailAndPassword(email, password)
-//   .then((userCredential) => {
-//     // User signed up successfully
-//     var user = userCredential.user;
-//     console.log(user);
-//   })
-//   .catch((error) => {
-//     console.error(error.code, error.message);
-//   });
-
-//   // Example of Facebook login
-// firebase.auth().signInWithPopup(facebookAuthProvider)
-// .then((result) => {
-//   // User signed in with Facebook successfully
-//   var user = result.user;
-//   console.log(user);
-// })
-// .catch((error) => {
-//   console.error(error.code, error.message);
-// });
-
 async function addUser(email, password, fullName) {
   await createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {

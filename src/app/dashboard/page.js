@@ -36,16 +36,6 @@ export default function Dashboard() {
         MyContacts()
     }, [auth])
 
-    // useEffect(() => {
-    //     onAuthStateChanged(auth, (user) => {
-    //         if (user) {
-    //             const uid = user.uid;
-    //             setUserDetail(user)
-    //         } else {
-    //         }
-    //     });
-    // }, [logOut])
-
     console.log('users', userDetail)
 
     const handlePost = async (description, file) => {
@@ -205,50 +195,7 @@ export default function Dashboard() {
                                         Your browser does not support the video tag.
                                     </video>
                                 ) : null}
-                                {/* <img height={70} width='100%' src={item.imageUrl} />
-                                {post.map((post) => (
-                                    <div key={post.id} videoUrl={post.videoUrl} > </div>
-                                ))} */}
-
-                                {/* <div>
-                                    {post.map((item, index) => (
-                                        <div key={index}>
-                                            <h1>{item.description}</h1>
-                                            {item.type === 'image' ? (
-                                                <img src={item.url} alt={item.description} style={{ maxWidth: '100%', maxHeight: '400px' }} />
-                                            ) : item.type === 'video' ? (
-                                                <video controls width="400">
-                                                    <source src={item.url} type="video/mp4" />
-                                                    Your browser does not support the video tag.
-                                                </video>
-                                            ) : null}
-                                        </div>
-                                    ))}
-                                </div> */}
-
-                                {/* {file && Array.from(file).map((item, index) => {
-                                    return <div key={index}>
-                                        {isImage(item) && (
-                                            <Image
-                                                src={URL.createObjectURL(item)}
-                                                width={200}
-                                                height={200}
-                                                alt="uploading"
-                                            />
-                                        )}
-
-                                        {isVideo(item) && (
-                                            <ReactPlayer url={URL.createObjectURL(item)} controls={true} />
-                                        )}
-
-                                        {isAudio(item) && (
-                                            <ReactPlayer url={URL.createObjectURL(item)} controls={true} />
-                                        )}
-
-                                    </div>
-
-                                })} */}
-                            </div>
+                                                           </div>
                             <div style={{ borderTop: '2px solid grey', borderBottom: '2px solid grey', color: 'black', fontSize: 21 }}>
                                 <FontAwesomeIcon icon={faThumbsUp} /> Like
                                 <FontAwesomeIcon icon={faComment} style={{ marginLeft: 80 }} /> Comment
@@ -274,7 +221,7 @@ export default function Dashboard() {
                 <div className='request'>
                     <h1 style={{ fontSize: 'large', fontWeight: 'bolder', textAlign: 'left', padding: 10 }}>Upcoming events</h1>
                     <div>
-                        <span><image width={30} src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJukIYseLOtlMDhYKfQfx0uDqurOqoXNmQOw&usqp=CAU' />
+                        <span><img width={30} src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJukIYseLOtlMDhYKfQfx0uDqurOqoXNmQOw&usqp=CAU' />
                             <h2 style={{ position: 'relative', bottom: 34, right: 59 }}>Design Talks</h2>
                             <h4 style={{ position: 'relative', bottom: 38, right: 59, fontSize: 12 }}>12 Oct, 13:00 IST</h4>
                             <p style={{ fontSize: 12, position: 'relative', bottom: 30, borderBottom: '1px solid grey' }}>A general talks about design is a set of <br />  Designer of Logitech Michael Skunpit</p>
@@ -286,7 +233,7 @@ export default function Dashboard() {
                 <div className='request'>
                     <h1 style={{ fontSize: 'large', fontWeight: 'bolder', textAlign: 'left', padding: 10 }}>Upcoming events</h1>
                     <div>
-                        <span><image width={30} src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJukIYseLOtlMDhYKfQfx0uDqurOqoXNmQOw&usqp=CAU' />
+                        <span><img width={30} src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJukIYseLOtlMDhYKfQfx0uDqurOqoXNmQOw&usqp=CAU' />
                             <h2 style={{ position: 'relative', bottom: 34, right: 59 }}>Design Talks</h2>
                             <h4 style={{ position: 'relative', bottom: 38, right: 59, fontSize: 12 }}>30 Dec, 16:00 IST</h4>
                             <p style={{ fontSize: 12, position: 'relative', bottom: 30, borderBottom: '1px solid grey' }}>A general talks about design is a set of <br />  Designer of Logitech Michael Skunpit</p>
