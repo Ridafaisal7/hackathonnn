@@ -1,0 +1,228 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.signinContainer {
+  margin: 0 auto;
+  padding: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgb(215, 201, 201);
+  border-radius: 10px;
+  height: 100%;
+  width: 370px;
+  text-align: center;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 38%;
+  position: absolute;
+  top: 0px;
+  left: 195px;
+}
+
+.header {
+  background-color: #fff;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  height: 46px;
+}
+
+.side-bar {
+  background-color: #fff;
+  color: black;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+  width: 16%;
+}
+
+.feed {
+  position: relative;
+  top: 10px;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 185px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  color: rgb(6, 6, 6);
+  text-decoration: none;
+  font-size: 20px;
+  margin-top: 28px;
+}
+
+.menu-item :hover {
+  color: deeppink;
+}
+
+.menu-item svg {
+  margin-right: 8px;
+}
+
+.menuu-container {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  color: rgb(6, 6, 6);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.menuu-item {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  color: rgb(6, 6, 6);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.menuu-item :hover {
+  color: deeppink;
+}
+
+.menuuu-item {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  color: rgb(6, 6, 6);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.menuuu-item svg {
+  margin-right: 7px;
+  margin-left: 30px;
+}
+
+.menuu-item svg {
+  margin-right: 7px;
+  margin-left: 30px;
+}
+
+.button-container {
+  display: flex;
+  font-size: 19px;
+}
+
+.button {
+  margin-right: 64px;
+  font-size: 19px;
+}
+
+.button :hover {
+  color: deeppink
+}
+
+.button-post {
+  background-color: deeppink;
+  color: white;
+  padding: 4px 20px;
+  border: 1px solid deeppink;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.button-post :hover {
+  background-color: lightsalmon;
+}
+
+.postAdd {
+  max-width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+  padding-right: 350px;
+}
+
+.postAd {
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #fff;
+  color: black;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+  padding-right: 320px;
+  height: 27px;
+  font-size: 18px;
+}
+
+.postfile {
+  font-size: 15px;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.button-logout {
+  background-color: blue;
+  color: white;
+  padding: 7px 19px;
+  border: 1px solid blue;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 699px;
+}
+
+.request {
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgb(215, 201, 201);
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.btn {
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 7px;
+}
